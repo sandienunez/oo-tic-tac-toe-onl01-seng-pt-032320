@@ -55,6 +55,10 @@ def turn(board)
   end
 end
 
+def turn_count(board)
+  counter = 0 
+  board.each do |token|
+
 
 # #def valid_move?(position)
 #   position.between?(0, 8) && position_taken?(position) == false #can put bang in front of !position_taken?(position)
