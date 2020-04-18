@@ -165,23 +165,11 @@ def over?
 end
 
 def winner
-  if won?
-    WIN_COMBINATIONS.each do |win_combination|
-      position_1 = [win_combination[0]]
-      position_2 = [win_combination[1]]
-      position_3 = [win_combination[2]]
-      if (position_1 == "X" && position_2 == "X" && position_3 == "X")
-        return "X"
-      elsif (position_1 == "O" && position_2 == "O" && position_3 == "O")
-        return "O"
-      else
-        # do nothing
-      end
-    end
-  else
-    return nil
-  end
+won = won?(@board)
+if won != nil
+return @board[won[0]]
 end
+end 
 
 def play(board)
   while !over?(board)
