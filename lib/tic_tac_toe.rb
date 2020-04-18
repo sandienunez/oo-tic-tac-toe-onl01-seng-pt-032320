@@ -70,9 +70,9 @@ end
 counter 
 end 
 
-def current_player(baord)
-  turn_count(board) % 2 == 0 ? "X":"O"
-end 
+  def current_player(baord)
+    turn_count(board) % 2 == 0 ? "X":"O"
+  end 
 
 def won?(board)
 end 
