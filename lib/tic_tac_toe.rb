@@ -38,25 +38,25 @@ def position_taken?(index)
   end
 end
 
-def valid_move?(array, index)
+def valid_move?(index)
   if (index < 0 || index > 8)
     return false
-  elsif position_taken?(array, index)
+  elsif position_taken?(index)
     return false
   else
     return true
   end
 end
 
-def turn(board)
+def turn
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
-  if valid_move?(board, index)
-    move(board, index, current_player(board))
-    display_board(board)
+  if valid_move?(index)
+    move(index, current_player)
+    display_board
   else
-    turn(board)
+    turn
   end
 end
 
