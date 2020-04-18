@@ -164,8 +164,8 @@ def over?
   end
 end
 
-def winner(array)
-  if won?(array)
+def winner
+  if won?
     WIN_COMBINATIONS.each do |win_combination|
       position_1 = array[win_combination[0]]
       position_2 = array[win_combination[1]]
