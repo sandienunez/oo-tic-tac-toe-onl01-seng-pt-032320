@@ -157,7 +157,6 @@ def draw?(board)
      return false
    end
 end
-end
 
 def over?(array)
   if ( won?(array) || draw?(array) || full?(array) )
