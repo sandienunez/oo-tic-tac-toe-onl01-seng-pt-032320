@@ -1,3 +1,6 @@
+class TicTacToe
+  
+
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -72,6 +75,9 @@ def current_player(baord)
 end 
 
 def won?(board)
+end 
+
+end 
 
 
 # #def valid_move?(position)
