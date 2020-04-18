@@ -156,8 +156,8 @@ def draw?
   end
 end
 
-def over?(array)
-  if ( won?(array) || draw?(array) || full?(array) )
+def over?
+  if ( won? || draw? || full? )
     return true
   else
     return false
