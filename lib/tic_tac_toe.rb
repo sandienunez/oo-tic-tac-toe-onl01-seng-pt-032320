@@ -21,6 +21,29 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
+def move(board, index, current_player)
+  board[index] = current_player
+end
+
+def position_taken?(array, index)
+  if (array[index] == " " || array[index] == "" || array[index] == nil)
+    return false
+  else
+    return true
+  end
+end
+
+def valid_move?(array, index)
+  if (index < 0 || index > 8)
+    return false
+  elsif position_taken?(array, index)
+    return false
+  else
+    return true
+  end
+end
+
+
 # #def valid_move?(position)
 #   position.between?(0, 8) && position_taken?(position) == false #can put bang in front of !position_taken?(position)
 # end 
