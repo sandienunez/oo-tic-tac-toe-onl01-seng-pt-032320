@@ -148,7 +148,7 @@ def full?
    @board.all? {|i| i == "X" || i == "O"}
 end
 
-def draw?(board)
+def draw?
    if !won?(board) && full?(board)
      return true
    elsif !won?(board) && !full?(board)
