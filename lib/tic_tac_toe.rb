@@ -70,7 +70,8 @@ end
 def current_player(baord)
   turn_count(board) % 2 == 0 ? "X":"O"
 end 
-end 
+
+def won?(board)
 
 
 # #def valid_move?(position)
