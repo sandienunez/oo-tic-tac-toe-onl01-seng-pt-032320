@@ -148,8 +148,8 @@ def full?
    @board.all? {|i| i == "X" || i == "O"}
 end
 
-def draw?(array)
-  if full?(array) && !won?(array)
+def draw?
+  if full? && !won?
     return true
   else
     return false
