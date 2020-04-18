@@ -2,8 +2,7 @@
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
-require_relative 'file1.rb'
-8
+
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Welcome to Tic Tac Toe!"
