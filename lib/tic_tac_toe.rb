@@ -62,9 +62,9 @@ end
 
 
 
-def turn_count(board)
+def turn_count
   counter = 0 
-  board.each do |token| 
+  @board.each do |token| 
     if token == "X" || token == "O"
     counter += 1 
   end 
@@ -72,11 +72,11 @@ end
 counter 
 end 
 
-  def current_player(baord)
-    turn_count(board) % 2 == 0 ? "X":"O"
+  def current_player
+    turn_count(@board) % 2 == 0 ? "X":"O"
   end 
 
-def won?(board)
+def won?
 end 
 
 end 
