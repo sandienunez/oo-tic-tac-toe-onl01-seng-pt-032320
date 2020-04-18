@@ -164,6 +164,12 @@ def over?(array)
   end
 end
 
+def winner(board)
+   if won?(board)
+      return board[won?(board)[0]]
+   end
+end
+
 def play(board)
   while !over?(board)
     turn(board)
