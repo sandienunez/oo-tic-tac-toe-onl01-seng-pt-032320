@@ -167,7 +167,7 @@ end
 def winner
 won = won?
 if won != nil
-return [won[0]]
+return @board[won[0]]
 end
 end 
 
