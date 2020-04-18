@@ -4,4 +4,4 @@ require 'pry'
 
 board = TicTacToe.new
 
-play
+board.play
