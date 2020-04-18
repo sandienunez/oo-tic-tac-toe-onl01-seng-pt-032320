@@ -30,8 +30,8 @@ def move(index, current_player)
   @board[index] = current_player
 end
 
-def position_taken?(array, index)
-  if (array[index] == " " || array[index] == "" || array[index] == nil)
+def position_taken?(index)
+  if (@board[index] == " " || @baord[index] == "" || @board[index] == nil)
     return false
   else
     return true
